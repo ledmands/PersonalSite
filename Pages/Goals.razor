@@ -1,0 +1,57 @@
+﻿@page "/goals"
+@inject HttpClient Http
+
+<PageTitle>Goals</PageTitle>
+
+<h1>Hopes and Dreams</h1>
+
+<p>This component demonstrates fetching dreams from the subconscious.</p>
+
+
+@if (goals == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date Achieved</th>
+                <th>Goal</th>
+                <th>But why though?</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var goal in goals)
+            {
+                <tr>
+                    <td>@goal.Date</td>
+                    <td>@goal.Goal</td>
+                    <td>@goal.Why</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private GoalList[]? goals;
+
+    protected override async Task OnInitializedAsync()
+    {
+        goals = await Http.GetFromJsonAsync<GoalList[]>("sample-data/goals.json");
+    }
+
+    public class GoalList
+    {
+        public String Date { get; set; }
+
+        public String Goal { get; set; }
+
+        public String Why { get; set; }
+
+        //public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+}
