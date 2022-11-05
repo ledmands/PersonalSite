@@ -7,6 +7,8 @@
 
 <p>This component demonstrates fetching dreams from the subconscious.</p>
 
+<button class ="btn btn-primary" @onclick="DisplayGoal">Cycle Dreams</button>
+
 
 @if (goals == null)
 {
@@ -23,15 +25,15 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var goal in goals)
-            {
+            
+            
                 <tr>
-                    <td>@goal.Date</td>
-                    <td>@goal.Goal</td>
-                    <td>@goal.Why</td>
+                    <td>@date</td>
+                <td>@goal</td>
+                <td>@why</td>
                     
                 </tr>
-            }
+            
         </tbody>
     </table>
 }
@@ -46,12 +48,14 @@ else
 
     public class GoalList
     {
-        public String Date { get; set; }
+        public String? Date { get; set; }
 
-        public String Goal { get; set; }
+        public String? Goal { get; set; }
 
-        public String Why { get; set; }
+        public String? Why { get; set; }
 
         //public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
+
+    
 }
