@@ -65,3 +65,12 @@ a, .btn-link {
     }
 
 
+/* Additions */
+
+.btn-image {
+    color: #f7f9fb;
+    margin: 5px;
+    padding: 10px;
+    background-color: #64786e;
+   
+}

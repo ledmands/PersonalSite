@@ -11,17 +11,17 @@
 
 
 <div class="container">
-    @if (imageSource is not null)
-    {
+    <!--@if (imageSource is not null)-->
+    
         <p>
             <img class="container-fluid" src="@imageSource" />
         </p>
-    }
+    
 
-    @for (var i = 0; i < 5; i++)
+    @for (int i = 0; i < 4; i++)
     {
-        var imageId = i;
-        <button @onclick="() => ShowImage(imageId)">
+        int imageId = i;
+        <button class="btn-image" @onclick="() => ShowImage(imageId)">
             Image @imageId
         </button>
     }
@@ -31,7 +31,7 @@
 
         private void ShowImage(int id)
         {
-            imageSource = $"images/image{id}.png ";
+            imageSource = $"images/image{id}.jpg ";
         }
     }
 </div>
