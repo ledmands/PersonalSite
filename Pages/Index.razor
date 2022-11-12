@@ -2,5 +2,37 @@
 
 <PageTitle>Index</PageTitle>
 
+<!--<img class="container" src="images/image0.png" /> -->
+
 <h1>Welcome to the suck...</h1>
-    <p>Stay a while. See the sights. Or lack thereof...</p>
+<p>Stay a while. See the sights. Or lack thereof...</p>
+
+
+
+
+<div class="container">
+    @if (imageSource is not null)
+    {
+        <p>
+            <img class="container-fluid" src="@imageSource" />
+        </p>
+    }
+
+    @for (var i = 0; i < 5; i++)
+    {
+        var imageId = i;
+        <button @onclick="() => ShowImage(imageId)">
+            Image @imageId
+        </button>
+    }
+
+    @code {
+        private string? imageSource;
+
+        private void ShowImage(int id)
+        {
+            imageSource = $"images/image{id}.png ";
+        }
+    }
+</div>
+

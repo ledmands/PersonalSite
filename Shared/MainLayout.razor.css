@@ -11,6 +11,7 @@ main {
 
 
 
+
 .sidebar {
     background-image: radial-gradient(#64825c, #687864);
 }   
@@ -82,6 +83,13 @@ main {
     }
 }
 
+
+/* Additions... */
+
 .content-buffer {
-    margin-top: 250px;
+    margin-top: 50px;
+}
+
+.banner-image {
+    margin-top: 30px;
 }

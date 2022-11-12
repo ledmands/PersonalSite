@@ -52,11 +52,19 @@
 
 @media (min-width: 641px) {
     .navbar-toggler {
-        display: none;
+        display: block;
     }
 
     .collapse {
         /* Never collapse the sidebar for wide screens */
-        display: block !important;
+        /*display: block !important;*/
     }
+}
+
+
+/* Additions*/
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
 }
