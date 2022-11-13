@@ -29,7 +29,7 @@
                 <button class="btn btn-image" @onclick="() => ShowImage(imageId)">Winter</button>
                 break;
             case 3:
-                <button class="btn btn-image" @onclick="() => ShowImage(imageId)">Ferry</button>
+                <button class="btn btn-image" @onclick="() => ShowImage(imageId)">Redwoods</button>
                 break;
 
         }
@@ -37,9 +37,7 @@
     }
     @if (imageSource is not null)
     {
-        <div class="container-fluid">
             <img class="container-fluid index-images" src="@imageSource" />
-        </div>
     }
     @code {
         private string? imageSource;
