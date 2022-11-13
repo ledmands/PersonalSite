@@ -103,10 +103,10 @@ main {
 .footer {
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 10px 0px 20px 0px;
     margin-top: 10px;
     /*align-content: center;*/
-    /*text-align: center;*/
+    text-align: center;
     color: #f7f9fb;
     background-image: radial-gradient(circle, #31432c, #687864);
 }
@@ -117,9 +117,9 @@ main {
     max-width: 30px;
     /*max-width: 30px;*/
     height: auto;
-    background-color: hotpink;
+    /*background-color: hotpink;*/
     display: block;
-    margin: 5px;
+    margin: 0px 5px 0px 0px;
     float: left;
 }
 
