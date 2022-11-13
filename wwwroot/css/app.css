@@ -77,9 +77,9 @@ a, .btn-link {
 
 .index-images {
     /*margin: 100px;*/
-    width: 100%;
+    width: 75%;
     height: auto;
-    border: 5px solid #555;
+    border: 10px groove #64786e;
     /*max-width: 800px;*/
 }
 

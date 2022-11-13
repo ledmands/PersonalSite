@@ -20,7 +20,7 @@
         @switch (imageId)
         {
             case 0:
-            <button class="btn btn-image" @onclick="() => ShowImage(imageId)">Dorks</button>
+                <button class="btn btn-image" @onclick="() => ShowImage(imageId)">Dorks</button>
                 break;
             case 1:
                 <button class="btn btn-image" @onclick="() => ShowImage(imageId)">Beach</button>
@@ -29,15 +29,16 @@
                 <button class="btn btn-image" @onclick="() => ShowImage(imageId)">Winter</button>
                 break;
             case 3:
-                <button class="btn btn-image" @onclick="() => ShowImage(imageId)">Redwoods</button>
+                <button class="btn btn-image" @onclick="() => ShowImage(imageId)">More dorks</button>
                 break;
-
         }
         
     }
     @if (imageSource is not null)
     {
-            <img class="container-fluid index-images" src="@imageSource" />
+        <article class="container-fluid">
+            <img class="index-images" src="@imageSource" />
+        </article>
     }
     @code {
         private string? imageSource;
