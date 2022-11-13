@@ -73,3 +73,7 @@
     position: absolute;
     top: 100%;
 }
+
+.navbar-buffer {
+    padding-right: 20px;
+}
