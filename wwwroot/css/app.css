@@ -75,8 +75,9 @@ a, .btn-link {
    
 }
 
-.cycle-images {
-    margin: 100px;
-    min-width: 100px;
-    align-content: center;
+.index-images {
+    /*margin: 100px;*/
+    width: 100%;
+    height: auto;
+    /*max-width: 800px;*/
 }

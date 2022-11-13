@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     background-color: #5085a5a0;
+    /*background-image: url(images/image1.jpg);
+    background-size: contain;*/
 }
 
 main {
@@ -95,4 +97,12 @@ main {
 }
 
 
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    color: #f7f9fb;
+    background-image: radial-gradient(circle, #31432c, #687864);
+}
 
