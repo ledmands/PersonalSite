@@ -94,6 +94,9 @@ main {
 
 .banner-image {
     margin-top: 30px;
+    border: 2px solid #31708e;
+    width: 100%;
+    height: auto;
 }
 
 
