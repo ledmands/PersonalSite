@@ -8,7 +8,12 @@
 }
 
 .navbar-brand {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    color: #e1e1e1;
+    font-variant-caps: small-caps;
+    font-family: 'Eras ITC';
+    font-weight: 600;
+    
 }
 
 .oi {

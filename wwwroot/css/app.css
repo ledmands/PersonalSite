@@ -1,7 +1,7 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1:focus {
@@ -88,4 +88,8 @@ a, .btn-link {
     margin: 5px;
     padding: 10px;
     background-color: #64786e;
+}
+
+.title{
+    color: black;
 }
