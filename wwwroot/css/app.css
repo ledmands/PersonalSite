@@ -79,6 +79,7 @@ a, .btn-link {
     /*margin: 100px;*/
     width: 100%;
     height: auto;
+    border: 5px solid #555;
     /*max-width: 800px;*/
 }
 

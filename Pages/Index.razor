@@ -1,6 +1,6 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Home</PageTitle>
 
 <!--<img class="container" src="images/image0.png" /> -->
 
@@ -16,9 +16,24 @@
     @for (int i = 0; i < 4; i++)
     {
         int imageId = i;
-        <button class="btn btn-image" @onclick="() => ShowImage(imageId)">
-            Image @imageId
-        </button>
+        
+        @switch (imageId)
+        {
+            case 0:
+            <button class="btn btn-image" @onclick="() => ShowImage(imageId)">Dorks</button>
+                break;
+            case 1:
+                <button class="btn btn-image" @onclick="() => ShowImage(imageId)">Beach</button>
+                break;
+            case 2:
+                <button class="btn btn-image" @onclick="() => ShowImage(imageId)">Winter</button>
+                break;
+            case 3:
+                <button class="btn btn-image" @onclick="() => ShowImage(imageId)">Ferry</button>
+                break;
+
+        }
+        
     }
     @if (imageSource is not null)
     {
