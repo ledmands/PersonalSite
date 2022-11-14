@@ -20,42 +20,42 @@ would be kinda cool to add an example of changing the theme of the site through 
 	<div class="container-fluid">
         <section class="row">
         <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
-            <div class="container-fluid @currentColor" @onclick="ShowSkill">
+            <div class="container-fluid @colorTile1" @onclick="() => ShowSkill(1)">
                 <img src="" class="img-fluid" alt="Placeholder image">
                 <h2>Testing one</h2>
                 <p>Testing one</p>
             </div>
         </article>
         <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
-            <div class="container-fluid skill-card-pink">
+            <div class="container-fluid @colorTile2" @onclick="() => ShowSkill(2)">
                 <img src="" class="img-fluid" alt="Placeholder image">
                 <h2>Testing one</h2>
                 <p>Testing one</p>
             </div>
         </article>
         <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
-            <div class="container-fluid skill-card-pink">
+            <div class="container-fluid @colorTile3" @onclick="() => ShowSkill(3)">
                 <img src="" class="img-fluid" alt="Placeholder image">
                 <h2>Testing one</h2>
                 <p>Testing one</p>
             </div>
         </article>
         <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
-            <div class="container-fluid skill-card-pink">
+            <div class="container-fluid @colorTile4" @onclick="() => ShowSkill(4)">
                 <img src="" class="img-fluid" alt="Placeholder image">
                 <h2>Testing one</h2>
                 <p>Testing one</p>
             </div>
         </article>
         <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
-            <div class="container-fluid skill-card-pink">
+            <div class="container-fluid @colorTile5" @onclick="() => ShowSkill(5)">
                 <img src="" class="img-fluid" alt="Placeholder image">
                 <h2>Testing one</h2>
                 <p>Testing one</p>
             </div>
         </article>
         <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
-            <div class="container-fluid skill-card-pink">
+            <div class="container-fluid @colorTile6" @onclick="() => ShowSkill(6)">
                 <img src="" class="img-fluid" alt="Placeholder image">
                 <h2>Testing one</h2>
                 <p>Testing one</p>
@@ -66,13 +66,19 @@ would be kinda cool to add an example of changing the theme of the site through 
     </div>
 
 @code {
-    public String currentColor = "skill-card-black";
-    //public String skillColor = "black";
-    public bool? SwapColor = true;
+    //public String[] tileColors = new String[6];
 
+    /*
+    for (int i = 0; i < tileColors.Length; i++ ) 
+    {
+
+    }*/
+    
     /*
     protected override async Task OnInitializedAsync()
     {
         currentColor = await Http.GetStringAsync("sample-data/color-class.txt");
     }*/
+
+
 }
