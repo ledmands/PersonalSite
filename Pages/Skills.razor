@@ -1,4 +1,6 @@
 ﻿@page "/skills"
+@inject HttpClient Http
+
 
 <PageTitle>Skills</PageTitle>
 
@@ -17,40 +19,60 @@ would be kinda cool to add an example of changing the theme of the site through 
 
 	<div class="container-fluid">
         <section class="row">
-        <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 skill-page-cover">
-            <img src="" class="img-fluid" alt="Placeholder image">
-            <h2>Testing one</h2>
-            <p>Testing one</p>
+        <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
+            <div class="container-fluid @currentColor" @onclick="ShowSkill">
+                <img src="" class="img-fluid" alt="Placeholder image">
+                <h2>Testing one</h2>
+                <p>Testing one</p>
+            </div>
         </article>
-        <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6">
-            <img src="" class="img-fluid" alt="Placeholder image">
-            <h2>Testing one</h2>
-            <p>Testing one</p>
+        <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
+            <div class="container-fluid skill-card-pink">
+                <img src="" class="img-fluid" alt="Placeholder image">
+                <h2>Testing one</h2>
+                <p>Testing one</p>
+            </div>
         </article>
-        <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6">
-            <img src="" class="img-fluid" alt="Placeholder image">
-            <h2>Testing one</h2>
-            <p>Testing one</p>
+        <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
+            <div class="container-fluid skill-card-pink">
+                <img src="" class="img-fluid" alt="Placeholder image">
+                <h2>Testing one</h2>
+                <p>Testing one</p>
+            </div>
         </article>
-        <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6">
-            <img src="" class="img-fluid" alt="Placeholder image">
-            <h2>Testing one</h2>
-            <p>Testing one</p>
+        <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
+            <div class="container-fluid skill-card-pink">
+                <img src="" class="img-fluid" alt="Placeholder image">
+                <h2>Testing one</h2>
+                <p>Testing one</p>
+            </div>
         </article>
-        <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6">
-            <img src="" class="img-fluid" alt="Placeholder image">
-            <h2>Testing one</h2>
-            <p>Testing one</p>
+        <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
+            <div class="container-fluid skill-card-pink">
+                <img src="" class="img-fluid" alt="Placeholder image">
+                <h2>Testing one</h2>
+                <p>Testing one</p>
+            </div>
         </article>
-        <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6">
-            <img src="" class="img-fluid" alt="Placeholder image">
-            <h2>Testing one</h2>
-            <p>Testing one</p>
+        <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
+            <div class="container-fluid skill-card-pink">
+                <img src="" class="img-fluid" alt="Placeholder image">
+                <h2>Testing one</h2>
+                <p>Testing one</p>
+            </div>
         </article>
     </section>
 
     </div>
 
 @code {
+    public String currentColor = "skill-card-black";
+    //public String skillColor = "black";
+    public bool? SwapColor = true;
 
+    /*
+    protected override async Task OnInitializedAsync()
+    {
+        currentColor = await Http.GetStringAsync("sample-data/color-class.txt");
+    }*/
 }
