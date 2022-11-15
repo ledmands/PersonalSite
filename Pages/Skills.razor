@@ -12,7 +12,7 @@ would be kinda cool to add an example of changing the theme of the site through 
 -->
 
 <p>
-    click to check out my awesome rocking talents:
+    Click on a Confusion Head to check out my awesome rocking talents:
 </p>
 
 <!-- Let's put a series of sections here that upon clicking display a skill-->
@@ -21,44 +21,38 @@ would be kinda cool to add an example of changing the theme of the site through 
         <section class="row">
         <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
             <div class="container-fluid @colorTile1" @onclick="() => ShowSkill(1)">
-                <img src="" class="img-fluid" alt="Placeholder image">
-                <h2>Testing one</h2>
-                <p>Testing one</p>
+                <img src="@tileImage1" class="img-fluid skill-image" alt="Placeholder image">
+                <h2>Juggling skills</h2>
             </div>
         </article>
         <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
             <div class="container-fluid @colorTile2" @onclick="() => ShowSkill(2)">
-                <img src="" class="img-fluid" alt="Placeholder image">
-                <h2>Testing one</h2>
-                <p>Testing one</p>
+                <img src="@tileImage2" class="img-fluid skill-image" alt="Placeholder image">
+                <h2>C#/Java/Python</h2>
             </div>
         </article>
         <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
             <div class="container-fluid @colorTile3" @onclick="() => ShowSkill(3)">
-                <img src="" class="img-fluid" alt="Placeholder image">
-                <h2>Testing one</h2>
-                <p>Testing one</p>
+                <img src="@tileImage3" class="img-fluid skill-image" alt="Placeholder image">
+                <h2>Breakdown boxes like a boss</h2>
             </div>
         </article>
         <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
             <div class="container-fluid @colorTile4" @onclick="() => ShowSkill(4)">
-                <img src="" class="img-fluid" alt="Placeholder image">
-                <h2>Testing one</h2>
-                <p>Testing one</p>
+                <img src="@tileImage4" class="img-fluid" alt="Placeholder image">
+                <h2>HTML/CSS</h2>
             </div>
         </article>
         <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
             <div class="container-fluid @colorTile5" @onclick="() => ShowSkill(5)">
-                <img src="" class="img-fluid" alt="Placeholder image">
-                <h2>Testing one</h2>
-                <p>Testing one</p>
+                <img src="@tileImage5" class="img-fluid" alt="Placeholder image">
+                <h2>Lucas hit drum</h2>
             </div>
         </article>
         <article class="col-xl-4 col-lg-4 col-md-6 col-10 offset-1 offset-sm-0 col-sm-6 article-buffer">
             <div class="container-fluid @colorTile6" @onclick="() => ShowSkill(6)">
-                <img src="" class="img-fluid" alt="Placeholder image">
-                <h2>Testing one</h2>
-                <p>Testing one</p>
+                <img src="@tileImage6" class="img-fluid" alt="Placeholder image">
+                <h2>Linux</h2>
             </div>
         </article>
     </section>
@@ -66,6 +60,8 @@ would be kinda cool to add an example of changing the theme of the site through 
     </div>
 
 @code {
+    
+
     //public String[] tileColors = new String[6];
 
     /*
