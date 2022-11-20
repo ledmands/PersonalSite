@@ -93,3 +93,9 @@ a, .btn-link {
 .title{
     color: black;
 }
+
+.list-border {
+    border: 8px groove #64786e;
+    margin: 5px;
+    padding: 5px;
+}

@@ -5,7 +5,7 @@ namespace PersonalSite.Pages
 {
     public partial class Email
     {
-
+        /*
         [Required]
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -13,6 +13,7 @@ namespace PersonalSite.Pages
         [DataType(DataType.EmailAddress)]
         [EmailAddress]
         public string EmailAddress { get; set; }
+        */
 
         /*
         // Student model used with form
