@@ -1,9 +1,26 @@
 ﻿@page "/email"
+@using PersonalSite
+@inject EmailApiClient client
 
+<h3>Contact me</h3>
 
+<EditForm Model="@emailModel" OnValidSubmit="@HandleValidSubmit">
 
-<h3>Email</h3>
+    <InputText id="first-name" @bind-Value="emailModel.FirstName" />
+
+    <InputText id="last-name" @bind-Value="emailModel.LastName" />
+
+    <InputText id="address" @bind-Value="emailModel.Address" />
+
+    <button type="submit">Submit</button>
+</EditForm>
 
 @code {
+    private Email emailModel = new();
 
+    private async Task HandleValidSubmit()
+    {
+        emailModel.CreatedOn = DateTime.Now;
+        await client.AddStudent(emailModel);
+    }
 }
