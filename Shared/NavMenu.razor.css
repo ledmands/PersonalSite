@@ -1,10 +1,13 @@
 .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #31432c;
 }
 
 .top-row {
     height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    /*background-color: rgba(0,0,0,0.4);*/
+    background-image: radial-gradient(circle, #31432c, #687864);
+    /*float: left; THIS FLOATS THE WHOLE CONTAINER...*/
+    justify-content: left !important;
 }
 
 .navbar-brand {
@@ -13,7 +16,8 @@
     font-variant-caps: small-caps;
     font-family: 'Eras ITC';
     font-weight: 600;
-    
+    /*float: left;*/
+    /*align-content: flex-start;*/
 }
 
 .oi {
@@ -26,6 +30,7 @@
 .nav-item {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
+    background-image: radial-gradient(circle,#687864,#31432c);
 }
 
     .nav-item:first-of-type {
@@ -76,4 +81,16 @@
 
 .navbar-buffer {
     padding-right: 20px;
+}
+
+.alignment-buffer {
+    text-align: left;
+}
+
+.navbar-alignment {
+    justify-content: left;
+}
+
+.navbar-button-buffer {
+    margin-right: 15px;
 }

@@ -1,9 +1,20 @@
-﻿using System.Net.Http.Json;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Net.Http.Json;
 
 namespace PersonalSite.Pages
 {
     public partial class Email
     {
+
+        [Required]
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        [Required]
+        [DataType(DataType.EmailAddress)]
+        [EmailAddress]
+        public string EmailAddress { get; set; }
+
+        /*
         // Student model used with form
         public class EmailData
         {
@@ -42,5 +53,6 @@ namespace PersonalSite.Pages
                 }
             }
         }
+        */
     }
 }

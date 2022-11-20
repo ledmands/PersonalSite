@@ -16,15 +16,15 @@ main {
 
 .sidebar {
     background-image: radial-gradient(#64825c, #687864);
-}   
+}
 
 .top-row {
     background-color: #f7f9fb;
     border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
+    justify-content: center;
     height: 3.5rem;
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
 }
 
     .top-row ::deep a, .top-row ::deep .btn-link {
@@ -48,7 +48,7 @@ main {
     }
 
     .top-row.auth {
-        justify-content: space-between;
+        /*justify-content: space-between;*/
     }
 
     .top-row ::deep a, .top-row ::deep .btn-link {
